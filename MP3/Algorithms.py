@@ -245,7 +245,6 @@ class AdaGrad:
 			y = train_label[i]
 			temp_val = 1 - y * (np.dot(x,self.w)+self.theta)
 			temp = np.amax(np.asarray([0,temp_val]))
-			#print temp
 			temp_loss += temp
 
 		return temp_loss

@@ -42,13 +42,6 @@ Returns:
 """
 def relu_derivative (z):
     #IMPLEMENT THIS!
-    '''
-    out = np.zeros(z.shape)
-    #print "z shape =",z.shape       # shape = [2,1] / [5,1]
-    for cor, val in np.ndenumerate(z):
-        if val > 0:
-            out[cor] = 1
-    '''
     return 1.0 * (z>0.0)
 #endDef    
 
