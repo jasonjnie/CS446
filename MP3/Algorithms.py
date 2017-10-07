@@ -22,10 +22,7 @@ class Perceptron:
 		for i in range(self.Num_Inst):
 			x = train_data[i]
 			y = train_label[i]
-			#print "y shape: ", y.shape
-			#print "x shape: ", x.shape
-			#print "w shape: ", self.w.shape
-			#print "theta: ", self.theta
+
 			temp = y * (np.dot(x,self.w) + self.theta)
 			self.mistake[i] = temp_mistake
 			if self.margin == 0:	# No margin
@@ -217,12 +214,9 @@ class AdaGrad:
 						self.mistake_converge += 1
 						self.num_R = 0	
 						temp_gt_w = -y * x
-						#print "gt_w", temp_gt_w.shape
 						temp_gt_theta = -y
-						#print "gt_thera", temp_gt_theta
 						self.G[:self.Num_Feat] += temp_gt_w ** 2	# w
 						self.G[self.Num_Feat] += temp_gt_theta ** 2	# theta	
-						#print "G", self.G.shape
 						temp_G = self._check_denominator(self.G)
 						self.w += self.LR * y * x / np.sqrt(temp_G[:self.Num_Feat])	
 						self.theta += self.LR * y / np.sqrt(temp_G[self.Num_Feat])
