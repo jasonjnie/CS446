@@ -1,1 +1,1 @@
-# CS446
+# CS446 Machine Learning @UIUC
