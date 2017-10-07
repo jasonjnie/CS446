@@ -1,0 +1,27 @@
+Here is a brief description of the contents of this directory
+
+- README: This file
+
+- Algorithms.py: This contains classes of the five algorithms
+  
+- Experiments1.py: Implement problem 1 in the homework. Run to tune parameters and plot two graphs.
+
+- Experiments2.py: Implement problem 2 in the homework. Run to tune parameters and plot one graph.
+
+- Experiments3.py: Implement problem 3 in the homework. Run to tune parameters.
+
+- Experiments4.py: Implement problem 4 in the homework. Run to tune parameters and plot two graphs.
+
+- gen.py: Generate training and testing dataset, called by each experiment.
+
+- add_noise.py: Add noise while generating a training or testing dataset, as specified in each experiment.
+
+- 1.1 n=500.png: Output plot of number of mistakes made by each algorithm in experiment 1 for n = 500.
+
+- 1.2 n=1000.png: Output plot of number of mistakes made by each algorithm in experiment 1 for n = 1000.
+
+- 2.png: Output plot of learning curve of each algorithm in experiment 2 with different n.
+
+- 4 mis.png: Output plot of misclassification error in experiment 4.
+
+- 4 hinge.png: Output plot of hinge loss in experiment 4.
